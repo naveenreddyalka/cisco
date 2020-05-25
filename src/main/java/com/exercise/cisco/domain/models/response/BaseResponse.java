@@ -4,35 +4,21 @@ import java.io.Serializable;
 import java.util.Date;
 
 import com.exercise.cisco.domain.constants.Status;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class BaseResponse implements Serializable {
 
-public class BaseResponse implements Serializable{
-	
-
-	private static final long serialVersionUID = 369877237856110092L;
+	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private Date requestDateTime;
-	private Date responseDateTime;
+	private Date responseDateTime = new Date();
+	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private Status status;
-	
-	public Date getRequestDateTime() {
-		return requestDateTime;
-	}
-	public void setRequestDateTime(Date requestDateTime) {
-		this.requestDateTime = requestDateTime;
-	}
-	public Date getResponseDateTime() {
-		return responseDateTime;
-	}
-	public void setResponseDateTime(Date responseDateTime) {
-		this.responseDateTime = responseDateTime;
-	}
-	public Status getStatus() {
-		return status;
-	}
-	public void setStatus(Status status) {
-		this.status = status;
-	}
-	
-	
+
 }

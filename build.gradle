@@ -18,32 +18,20 @@ repositories {
 	mavenCentral()
 }
 
-<dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-starter-cache</artifactId>
-<version>2.2.2.RELEASE</version></dependency>
-<dependency>
-<groupId>
-</groupId>
-<artifactId>cache-api</artifactId>
-<version>1.1.1</version>
-</dependency>
-<dependency>
-<groupId>org.ehcache</groupId>
-<artifactId>ehcache</artifactId>
-<version>3.8.1</version>
-</dependency>
-
-
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-web-services'
 	implementation 'org.springframework.session:spring-session-core'
-	implementation 'org.springframework.boot.spring-boot-starter-cache'
-	implementation 'javax.cache.cache-api'
-	implementation 'org.ehcache.ehcache'
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
+	implementation 'org.webjars:jquery:3.4.1'
+	implementation 'org.webjars:bootstrap:4.3.1'
+	implementation 'org.webjars:webjars-locator-core'
+	implementation 'javax.cache:cache-api'
+	implementation 'org.ehcache:ehcache'
+	implementation 'org.webjars:js-cookie:2.1.0'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'

@@ -52,3 +52,6 @@ Spring Boot framework and its bootstrapping capabilities <br />
 an immemory cache to optimizate API repsonse, the TTL is 30 sec <br />
 an immemory database for url managment <br />
 Oauth2 Security with GitHub Integration JPA for the ease to moving to another distributed DB<br />
+
+The Flow looks like 
+![Screenshot](/pic/1.png)

@@ -31,7 +31,8 @@ GET /malware/v1/urlinfo?url={URL}
 
 Sample request URL:
 
-```http://localhost:8080/malware/v1/urlinfo?url=www.test.com
+```
+http://localhost:8080/malware/v1/urlinfo?url=www.test.com
 ```
 Sample response:
 ```

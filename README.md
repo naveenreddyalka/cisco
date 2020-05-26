@@ -10,7 +10,8 @@ To run from main directory use the below commands
 ```bash
 ./gradlew bootRun 
 or 
-gradle bootRun```
+gradle bootRun
+```
 
 ## Usage
 

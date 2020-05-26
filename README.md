@@ -29,7 +29,17 @@ This Applciation provides one API
 GET /malware/v1/urlinfo?url={URL}
 ```
 
-Sample: http://localhost:8080/malware/v1/urlinfo?url=www.test.com
+Sample request URL:
+
+```http://localhost:8080/malware/v1/urlinfo?url=www.test.com
+```
+Sample response:
+```
+{
+   "responseDateTime":"2020-05-26T00:44:10.701+0000",
+   "urlStatus":"URL_SAFE"
+}
+```
 
 Access the database via the below URL to update UrlInfo 
 

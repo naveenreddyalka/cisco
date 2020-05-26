@@ -28,12 +28,12 @@
 		  <div id="registerSubmit">
 		    <div id="URL"></div>
 		      Enter URL: <input type="text" name="url" id="url" size="60"/><br>
-		      <div id="emailError" ></div>
 		      <input id="getURLInfo" type="button" value="getURLInfo" />
-		      <div id="UrlInfo"></div>
+		      <div id="UrlInfo" ></div>
 		  </div>
 		</div>
 	</div>
+	
 	
 	<script type="text/javascript">
     $.get("/malware/user", function(data) {
@@ -41,11 +41,15 @@
         $(".unauthenticated").hide()
         $(".authenticated").show()
     });
-   
-    $('#getURLInfo').click(function() { $.ajax({
+    
+    $('#getURLInfo').click(function() { 
+    	var url = $('#url').val();
+    	$.ajax({
          type: "GET",
          url: '/malware/v1/urlinfo',
-         data: $("#registerSubmit").serialize(),
+         data: {
+             'url': url,
+         },
          success: function(data) {
         	 $('#UrlInfo').html(JSON.stringify(data));
          }

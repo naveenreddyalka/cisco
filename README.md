@@ -21,7 +21,7 @@ Access the application via
 http://localhost:8080/malware/
 ```
 
-This application has Oauth2 setup via GitHub, on the welcomr page you will need to click the link to get authenticated
+This application has Oauth2 setup via GitHub, on the welcome page you will need to click the link to get authenticated
 
 This Applciation provides one API 
 
@@ -36,8 +36,8 @@ Access the database via the below URL to update UrlInfo
 ```python
 http://localhost:8080/malware/h2/
 ```
-This applciation uses 
-Spring Boot framework and its bootstrapping capabilities 
-an immemory cache to optimizate API repsonse, the TTL is 30 sec 
-an immemory database for url managment 
-Oauth2 Security with GitHub Integration JPA for the ease to moving to another distributed DB
+This applciation uses <br />
+Spring Boot framework and its bootstrapping capabilities <br />
+an immemory cache to optimizate API repsonse, the TTL is 30 sec <br />
+an immemory database for url managment <br />
+Oauth2 Security with GitHub Integration JPA for the ease to moving to another distributed DB<br />

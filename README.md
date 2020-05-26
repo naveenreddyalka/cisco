@@ -1,3 +1,32 @@
+Malware Loopup Service
+
+Requierments 
+Java 8+
+Gradle 4+ 
+
+Run :
+From main directory 
+./gradlew bootRun
+or
+gradle bootRun
+
+Access the application via
+http://localhost:8080/malware/
+
+Access the database via
+http://localhost:8080/malware/h2/ 
+
+This application has Oauth2 setup via GitHub , on the welcomr page you will need to click the link to get authenticated
+
+This Applciation provides one API
+GET /malware/v1/urlinfo?url={URL}
+
+Sample:
+http://localhost:8080/malware/v1/urlinfo?url=www.test.com
+
+
+
+
 Cloud Security Coding Exercise
 
 

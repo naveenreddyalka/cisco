@@ -1,14 +1,14 @@
 Malware Loopup Service
 
 Requierments 
-Java 8+
+Java 8+ and
 Gradle 4+ 
 
 Run :
 From main directory 
-./gradlew bootRun
+./gradlew bootRun 
 or
-gradle bootRun
+ gradle bootRun
 
 Access the application via
 http://localhost:8080/malware/
@@ -24,6 +24,18 @@ http://localhost:8080/malware/v1/urlinfo?url=www.test.com
 
 Access the database via the below URL to update UrlInfo
 http://localhost:8080/malware/h2/ 
+
+
+This applciation uses
+Spring Boot framework and its bootstrapping capabilities
+an immemory cache to optimizate API repsonse, the TTL is 30 sec
+an immemory database for url managment 
+Oauth2 Security with GitHub Integration
+JPA for the ease to moving to another distributed DB
+
+
+###############################################################
+
 
 Cloud Security Coding Exercise
 

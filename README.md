@@ -42,7 +42,7 @@ Sample response:
 }
 ```
 
-Access the database via the below URL to update UrlInfo 
+Access the database via the below URL to update UrlInfo(just submit)
 
 ```python
 http://localhost:8080/malware/h2/
@@ -53,5 +53,14 @@ an immemory cache to optimizate API repsonse, the TTL is 30 sec <br />
 an immemory database for url managment <br />
 Oauth2 Security with GitHub Integration JPA for the ease to moving to another distributed DB<br />
 
-The Flow looks like 
-![Screenshot](/pic/1.png)
+The Flow looks something like the below 
+
+
+![Main Page](/pic/1.png)
+![Main Page](/pic/2.png)
+![GitHub Page](/pic/3.png)
+![PostLogin Page](/pic/4.png)
+![Submit good url Page](/pic/5.png)
+![Submit bad url Page](/pic/6.png)
+![H2 home Page, just submit](/pic/7.png)
+![H2 Main Page](/pic/8.png)

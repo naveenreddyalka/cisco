@@ -13,9 +13,6 @@ gradle bootRun
 Access the application via
 http://localhost:8080/malware/
 
-Access the database via
-http://localhost:8080/malware/h2/ 
-
 This application has Oauth2 setup via GitHub , on the welcomr page you will need to click the link to get authenticated
 
 This Applciation provides one API
@@ -25,7 +22,8 @@ Sample:
 http://localhost:8080/malware/v1/urlinfo?url=www.test.com
 
 
-
+Access the database via the below URL to update UrlInfo
+http://localhost:8080/malware/h2/ 
 
 Cloud Security Coding Exercise
 
